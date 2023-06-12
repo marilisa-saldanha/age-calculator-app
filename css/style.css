@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root {
+  /* Colors */
+  /* Primary */
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+  --off-grey: hsla(0, 0%, 86%, 0.178);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--off-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--white);
+  width: 21.875rem;
+  height: 30rem;
+  border-radius: 2rem 2rem 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+
+.card .dates {
+  display: flex;
+  gap: .375rem;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.card .dates .day {
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .dates .month {
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .dates .year {
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.nameInput {
+  color: var(--smokey-grey);
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+.input {
+  width: 5rem;
+  height: 3.5rem;
+  border-radius: .5rem;
+  border: none;
+  border: .063rem solid var(--light-grey);
+  color: var(--off-black);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: .2rem 0;
+  outline: none;
+  padding-left: .5rem;
+}
+
+.input:focus {
+  border: .063rem solid var(--purple);
+}
+
+.input::placeholder {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+/* hide the input scroll */
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.infoError {
+  color: var(--light-red);
+  font-weight: 400;
+  font-style: italic;
+  font-size: .7rem;
+  display: flex;
+}
+
+.card .arrow {
+  width: 100%;
+  height: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.card .arrow hr {
+  width: 19.875rem;
+  border-color: var(--off-grey);
+  position: absolute;
+}
+
+.card .arrow button {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.card .arrow button img {
+  background-color: var(--purple);
+  width: 3.5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.card .arrow button:hover img{
+  background-color: var(--off-black);
+}
+
+.card .results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-bottom: 1rem;
+}
+
+.card .results p {
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--off-black);
+  font-weight: 700;
+}
+
+.card .results p span {
+  color: var(--purple);
+  padding-right: .5rem;
+}
+
+footer {
+  text-align: center;
+  font-size: .85rem;
+  padding: .5rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--purple);
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 46.875rem;
+    border-radius: 2rem 2rem 10rem 2rem;
+    height: 39rem;
+    padding: 3rem;
+  }
+
+  .card .dates {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: left;
+    padding-top: 0;
+  }
+
+  .card .dates .day {
+    width: 7rem;
+  }
+  
+  .card .dates .month {
+    width: 7rem;
+  }
+  
+  .card .dates .year {
+    width: 7rem;
+  }
+
+  .input {
+    width: 7rem;
+  }
+
+  .card .arrow {
+    height: 5rem;
+    margin: 0;
+  }
+
+  .card .arrow hr {
+    width: 40.875rem;
+  }
+
+  .card .arrow button {
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    position: absolute;
+    display: flex;
+    right: 0;
+  }
+
+  .card .arrow button img {
+    width: 5rem;
+    padding: 1.3rem;
+  }
+
+  .card .results {
+    padding-bottom: 0;
+  }
+  
+  .card .results p {
+    font-size: 5rem;
+  }
+
+  footer {
+    font-size: .95rem;
+  }
+}
