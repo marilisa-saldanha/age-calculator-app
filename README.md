@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/age-calculator-app-using-html-css-flexbox-and-javascript-8uRsj3pymt)
+- [Live Site URL](https://marilisa-saldanha.github.io/age-calculator-app/)
 
 ## My process
 
