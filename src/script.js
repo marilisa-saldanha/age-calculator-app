@@ -43,28 +43,28 @@ function dateValidator() {
       validate = false;
     }
 
-    else if (inputMonth.value === '02' || inputMonth.value === '2' && inputDay.value > '29') {
+    else if (inputMonth.value === '2' && inputDay.value > 29) {
       inputDay.style.border = '.063rem solid var(--light-red)';
       inputDay.parentElement.querySelector('.infoError').innerText = 'Must be a valid day';
       inputDay.parentElement.querySelector('.nameInput').style.color = 'var(--light-red)';
       validate = false;
     } 
 
-    else if (inputMonth.value === '04' || inputMonth.value === '4' && inputDay.value > 30) {
+    else if (inputMonth.value === '4' && inputDay.value > 30) {
       inputDay.style.border = '.063rem solid var(--light-red)';
       inputDay.parentElement.querySelector('.infoError').innerText = 'Must be a valid day';
       inputDay.parentElement.querySelector('.nameInput').style.color = 'var(--light-red)';
       validate = false;
     }
 
-    else if (inputMonth.value === '06' || inputMonth.value === '6' && inputDay.value > 30) {
+    else if (inputMonth.value === '6' && inputDay.value > 30) {
       inputDay.style.border = '.063rem solid var(--light-red)';
       inputDay.parentElement.querySelector('.infoError').innerText = 'Must be a valid day';
       inputDay.parentElement.querySelector('.nameInput').style.color = 'var(--light-red)';
       validate = false;
     }
 
-    else if (inputMonth.value === '09' || inputMonth.value === '9' && inputDay.value > 30) {
+    else if (inputMonth.value === '9' && inputDay.value > 30) {
       inputDay.style.border = '.063rem solid var(--light-red)';
       inputDay.parentElement.querySelector('.infoError').innerText = 'Must be a valid day';
       inputDay.parentElement.querySelector('.nameInput').style.color = 'var(--light-red)';
